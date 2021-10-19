@@ -20,26 +20,31 @@ public class MiddleNodeDeletion {
 		nodeC.setNext(nodeD);
 		
 		printLinkedList(head);
+		deleteMiddle(head);
+		printLinkedList(head);
+		deleteMiddle(head);
+		printLinkedList(head);
 	}
 	
 	public static Node deleteMiddle(Node head) {
-		if (head == null || head.getNext() == null) {
+		
+		if (head == null || head.getNext() == null) { // Check size
 			return head;
 		}
 		
-		Node slow = head;
-		Node fast = head;
+		Node slowPointer = head; 
+		Node fastPointer = head;
 		
 		Node previous = null;
 		
-		while (fast != null && fast.getNext() != null) {
-			fast = fast.getNext().getNext();
-			previous = slow;
-			slow = slow.getNext();
+		while (fastPointer != null && fastPointer.getNext() != null) {
+			fastPointer = fastPointer.getNext().getNext(); // jumps 2 nodes
+			previous = slowPointer;
+			slowPointer = slowPointer.getNext();
 		}
 		
 		// Delete middle node
-		previous.setNext(slow.getNext());
+		previous.setNext(slowPointer.getNext());
 		
 		return head;
 	}
