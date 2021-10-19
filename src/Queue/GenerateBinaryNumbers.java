@@ -60,10 +60,10 @@ public class GenerateBinaryNumbers {
 		
 		for (int i = 1; i <= n; i++) {
 			Integer current = queue.remove();
-			System.out.println(current);
+			System.out.println(current); // we only want to print out the first N binary numbers
 			
-			queue.add(current * 10);
-			queue.add(current * 10 + 1);
+			queue.add(current * 10); // 2nd binary num
+			queue.add(current * 10 + 1); // 3rd binary num
 		}
 		
 		System.out.println();
