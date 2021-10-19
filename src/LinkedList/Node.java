@@ -3,13 +3,13 @@ package LinkedList;
 public class Node<D> { // <D> this is for "generics" to denote the data field can be of any type
 
 	private D data;
-	private Node next; // this is for next Node 
+	private Node<D> next; // this is for next Node 
 
-	public Node getNext() {
+	public Node<D> getNext() {
 		return next;
 	}
 
-	public void setNext(Node next) {
+	public void setNext(Node<D> next) {
 		this.next = next;
 	}
 

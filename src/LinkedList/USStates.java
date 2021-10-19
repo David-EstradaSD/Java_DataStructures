@@ -6,7 +6,7 @@ import java.util.ListIterator;
 public class USStates {
 	
 	public static void main(String[] args) {
-		LinkedList<String> states = new LinkedList();
+		LinkedList<String> states = new LinkedList<>();
 		
 		states.add("Alaska");
 		states.add("Arizona");
