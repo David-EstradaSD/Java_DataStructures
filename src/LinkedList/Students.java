@@ -8,14 +8,14 @@ public class Students {
 		LinkedList<String> students = new LinkedList<String>();
 		
 		students.add("Dave");
-		students.add("Dev");
+		students.add("Dan");
 		students.add("Meesh");
-		students.add("Carol");
-		students.add("Oscar");
+		students.add("Luke");
+		students.add("Lea");
 		
 		students.addFirst("Eva");
 		students.addLast("Eric");
-		students.add(2, "Jacks");
+		students.add(2, "Jacky");
 		
 		// Retrieve items from a LinkedList by placement 
 		String firstStudent = students.getFirst();
