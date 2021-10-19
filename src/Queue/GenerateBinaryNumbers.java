@@ -23,8 +23,6 @@ public class GenerateBinaryNumbers {
 		printBinaryUsingQueue(0); // nothing to print
 		printBinaryUsingQueue(-9); // nothing to print
 		
-		
-		
 	}
 	
 	public static void printBinary(int n) {
