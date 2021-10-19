@@ -6,5 +6,9 @@ This repository is dedicated to common Data Structures found in the Java languag
 ### Technologies
 * Java
 * Data Structures & Algorithms 
-* HashMaps, Queues, LinkedList, Arrays, Stack
+* Collections Framework (Iterator)
+* Sets (HashSet, TreeSet, SortedSet)
+* Lists (LinkedList, ArrayList, Vector [Stack])
+* Queue (PriorityQueue, Deque)
+* HashMap, HashTable
 * Conditionals & loops
